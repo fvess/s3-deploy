@@ -6,9 +6,9 @@ DIRECTORY=${2:-"dist"}
 INDEXFILE=${3:-"index.html"}
 
 # MESSAGES
-ERR=`echo $(tput setaf 1)ERR:(tput sgr 0):`
-INF=`echo $(tput setaf 3)INF:(tput sgr 0):`
-USE=`echo $(tput setaf 6)USE:(tput sgr 0):`
+ERR=`echo $(tput setaf 1)ERR:$(tput sgr 0)`
+INF=`echo $(tput setaf 3)INF:$(tput sgr 0)`
+USE=`echo $(tput setaf 6)USE:$(tput sgr 0)`
 
 # VALIDATE ARGUMENTS
 if [ "$#" -lt 1 -o "$#" -gt 3 ]
